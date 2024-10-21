@@ -12,7 +12,7 @@ import Themetoggle from './Themetoggle.astro'
     <a href="https://geminiprochat.com" class="gpt-title">
       <div class="tenor-gif-embed" data-postid="17623388259799995656" data-share-method="host" data-aspect-ratio="0.967871" data-width="100%"><a href="https://tenor.com/view/ryan-gosling-thumbs-up-thumbs-up-gif-ryan-okay-gif-17623388259799995656">Ryan Gosling Thumbs Up GIF</a>from <a href="https://tenor.com/search/ryan+gosling-gifs">Ryan Gosling GIFs</a></div>
     </a>
-    <a href="https://geminiprochat.com" class="gpt-subtitle">Ryan AI</a>
+    <a href="https://pbs.twimg.com/media/GK5KbZObEAA0RQd.jpg" class="emoji-text">😎 👍</a>
   </div>
 </header>
 
@@ -46,10 +46,15 @@ import Themetoggle from './Themetoggle.astro'
     width: 100%;
   }
 
-  .gpt-subtitle {
-    margin-top: 6px; /* Decreased from 8px to 6px */
-    font-size: 1.1em; /* Decreased from 1.2em to 1.1em */
-    font-weight: bold;
+  .emoji-text {
+    margin-top: 10px;
+    font-size: 2em; /* Increased from 1.3em to 2em */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+
+  .emoji-text:hover {
+    transform: scale(1.1); /* Added a slight scale effect on hover */
   }
 </style>
 
