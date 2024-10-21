@@ -9,7 +9,57 @@ import Themetoggle from './Themetoggle.astro'
     <Themetoggle />
   </div>
   <div class="fi mt-2">
-    <a href="https://geminiprochat.com" class="gpt-title">Gemini Pro</a>
-    <a href="https://geminiprochat.com" class="gpt-subtitle">Chat</a>
+    <a href="https://geminiprochat.com" class="gpt-title">
+      <div class="tenor-gif-embed" data-postid="17623388259799995656" data-share-method="host" data-aspect-ratio="0.967871" data-width="100%"><a href="https://tenor.com/view/ryan-gosling-thumbs-up-thumbs-up-gif-ryan-okay-gif-17623388259799995656">Ryan Gosling Thumbs Up GIF</a>from <a href="https://tenor.com/search/ryan+gosling-gifs">Ryan Gosling GIFs</a></div>
+    </a>
+    <a href="https://geminiprochat.com" class="gpt-subtitle">Ryan AI</a>
   </div>
 </header>
+
+<style>
+  .tenor-gif-embed {
+    max-width: 150px; /* Decreased from 200px to 150px */
+    width: 100%; /* Ensures the GIF takes full width of its container */
+    border-radius: 8px; /* Slightly decreased from 10px to 8px */
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .tenor-gif-embed:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15); /* Slightly reduced shadow on hover */
+  }
+
+  /* Adjust header layout for the smaller GIF */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0; /* Slightly reduced padding */
+  }
+
+  .fi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gpt-subtitle {
+    margin-top: 6px; /* Decreased from 8px to 6px */
+    font-size: 1.1em; /* Decreased from 1.2em to 1.1em */
+    font-weight: bold;
+  }
+</style>
+
+<script is:inline>
+  // Load Tenor embed script
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://tenor.com/embed.js';
+    document.body.appendChild(script);
+  })();
+</script>
