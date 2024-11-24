@@ -1,7 +1,10 @@
 ---
 import Logo from './Logo.astro'
 import Themetoggle from './Themetoggle.astro'
+import MinimalNav from './MinimalNav.astro'
 ---
+
+<MinimalNav />
 
 <header>
   <div class="fb items-center">
@@ -37,6 +40,7 @@ import Themetoggle from './Themetoggle.astro'
     flex-direction: column;
     align-items: center;
     padding: 12px 0; /* Slightly reduced padding */
+    margin-top: 3.5rem; /* Add margin to account for fixed navbar */
   }
 
   .fi {

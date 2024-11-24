@@ -1,26 +1,67 @@
 .message pre {
-  background-color: #64748b10;
-  font-size: 0.8rem;
-  padding: 0.4rem 1rem;
+  background-color: #f8fafc;
+  font-size: 0.9rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin: 1rem 0;
+  border: 1px solid #e2e8f0;
 }
 
 .message .hljs {
   background-color: transparent;
+  font-family: 'Fira Code', monospace;
 }
 
 .message table {
-  font-size: 0.8em;
+  font-size: 0.9em;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .message table thead tr {
-  background-color: #64748b40;
+  background-color: #f1f5f9;
   text-align: left;
+  font-weight: 600;
 }
 
 .message table th, .message table td {
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1.2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.message table tbody tr:hover {
+  background-color: #f8fafc;
 }
 
 .message table tbody tr:last-of-type {
-  border-bottom: 2px solid #64748b40;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .message pre {
+    background-color: #1e293b;
+    border-color: #334155;
+  }
+  
+  .message table thead tr {
+    background-color: #334155;
+  }
+  
+  .message table th, .message table td {
+    border-color: #334155;
+  }
+  
+  .message table tbody tr:hover {
+    background-color: #1e293b;
+  }
+  
+  .message table tbody tr:last-of-type {
+    border-color: #334155;
+  }
 }

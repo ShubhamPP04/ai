@@ -1,0 +1,82 @@
+---
+import Themetoggle from './Themetoggle.astro'
+---
+
+<nav class="nav-container">
+  <div class="nav-content">
+    <div class="nav-brand">
+      <a href="/" class="nav-logo">
+        <img src="/icon.svg" alt="Gemini Pro Chat" />
+        <span>Gemini Pro Chat</span>
+      </a>
+    </div>
+    <div class="nav-items">
+      <Themetoggle />
+    </div>
+  </div>
+</nav>
+
+<style>
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5rem;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(251, 251, 251, 0.8);
+  z-index: 50;
+}
+
+:global(html.dark) .nav-container {
+  background: rgba(33, 33, 41, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-content {
+  max-width: 70ch;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--c-fg);
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
+}
+
+.nav-logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-logo span {
+    display: none;
+  }
+}
+</style>
